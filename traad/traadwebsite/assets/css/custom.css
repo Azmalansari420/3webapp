@@ -1,0 +1,251 @@
+
+
+    /*desktop*/
+    @media only screen and (min-width: 1025px) {
+        .desktop-none {
+            display:none !important;
+        }
+        .text-slider {
+            font-size: 43px;
+
+        }
+        .desktop-logo{
+            width: 16% !important;
+        }
+        .hero-section--secondary {
+         background: none; 
+         background-color: black!important;
+        }
+
+        .slider-input{
+            background: floralwhite;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .slider-input input, .slider-input textarea {
+            background: rgb(255 223 223 / 0%);
+            border: none;
+            border-bottom: 1px solid rgb(0 0 0);
+            border-radius: 0;
+            padding: 12px 0;
+            color: black;
+            padding: 12px 35px;
+        }
+        button#submit {
+            background: white;
+            color: black;
+            padding: 6px 17px;
+            border-radius: 7px;
+            font-weight: 600;
+        }
+
+
+        .container-vox {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .box {
+            background: linear-gradient(to right, rgb(20 20 20 / 90%) 30%, rgba(50, 50, 50, 0.8) 70%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .large {
+            width: 54%;
+            font-size: 18px;
+        }
+
+        .small {
+            width: 26.5%;
+            font-size: 16px;
+        }
+        .box-pp{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .step-box {
+        width: 50%;
+        left: 25%;
+    }
+
+
+
+
+
+        
+    } 
+    
+
+
+
+    .desktop-logo{
+            width: 20% !important;
+        }
+
+        .margin-gap
+        {
+            margin-top: 12px;
+        }
+
+
+
+
+/*mobile*/
+    @media only screen and (max-width: 1026px) {
+        .mobile-none {
+            display:none !important;
+        }
+        .desktop-logo{
+            width: 20% !important;
+        }
+        .text-slider {
+           font-size: 30px;
+            margin-bottom: 15px!important;
+        }
+
+        .hero-section--secondary {
+         background: none; 
+         background-color: black!important;
+        }
+
+        .header-section .navbar .navbar-brand .small_logo {
+                max-width: 21%;
+            }
+
+        .justify-mobile
+        {
+            justify-content: space-around!important;
+        }
+
+        .slider-input{
+            background: floralwhite;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .slider-input input, .slider-input textarea {
+            background: rgb(255 223 223 / 0%);
+            border: none;
+            border-bottom: 1px solid rgb(0 0 0);
+            border-radius: 0;
+            padding: 12px 0;
+            color: black;
+            padding: 12px 35px;
+        }
+        button#submit {
+            background: white;
+            color: black;
+            padding: 6px 17px;
+            border-radius: 7px;
+            font-weight: 600;
+        }
+
+        .margin-gap
+        {
+            margin-top: 12px;
+        }
+
+
+        .gif-gap{
+                margin-top: 67px!important;
+        }
+
+
+        .container-vox {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .box {
+            background: linear-gradient(to right, rgb(20 20 20 / 90%) 30%, rgba(50, 50, 50, 0.8) 70%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .large {
+            width: 94%;
+            font-size: 18px;
+        }
+
+        .small {
+            width: 47%;
+            font-size: 16px;
+        }
+
+        .box-pp{
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+     
+
+
+
+
+
+    } 
+
+
+
+
+
+
+h5.text-slider.mb-0.mb-lg-15 {
+    font-family: sans-serif;
+}
+.header-section .navbar-toggler span {
+    background: #7a7a7a!important;
+}
+    .slider-input {
+        border-radius: 50px!important;
+    }
+
+    input::placeholder {
+          color: black; /* Change this to any color */
+          opacity: 1;  /* Ensures full color visibility */
+        }
+
+
+        .bold {
+            font-weight: 800;
+            font-size: 20px;
+                font-family: 'League Spartan', sans-serif;
+        }
+
+        
+        a#submit {
+        background: white;
+        color: black;
+        padding: 6px 17px;
+        border-radius: 7px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+
+@media (max-width: 991px) {
+    .social-area a {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        margin-right: 7px;
+    }
+}
+
+
+.footer:before {
+    height: 0;
+}

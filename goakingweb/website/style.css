@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+}
+.navbar {
+  border: 1px solid black;
+  padding: 5px 0;
+  background-color: #fff;
+}
+.navbar-item {
+  padding: 10px 0;
+  font-weight: 500;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.navbar-item a {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.marquee1 {
+  color: rgb(247, 40, 4);
+  background-color: #000;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+.sata-result {
+  padding: 0;
+}
+.notice-list li {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+.timing-list li {
+  color: crimson;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content-section {
+  background-color: #e5e7eb;
+  padding: 2rem 0;
+}
+.sata-result{
+  padding: 20px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.sata-result a:hover {
+  border-bottom: 2px solid #fff;
+}
+.table-section {
+  margin-bottom: 30px;
+}
+.questions p{
+  color: green;
+}
+.questions h2{
+  color: rgb(206, 15, 15);
+}
+
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+} */
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 2px;
+  text-align: center;
+}
+
+.disclaimer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.table-section table td:nth-child(1) {
+  background-color: orange;
+  color: #fff;
+}
+.table-section table th {
+  background-color: orange;
+  color: #fff;
+}
+
+footer {
+  background-color: orange;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* buttons-styles */
+.button-53 {
+  background-color: #198754;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 117px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    max-width: 200px;
+  }
+}
+.right-button {
+  background-color: #ffe54c;
+  transform: rotate(2deg);
+}
+
+/*custom logo style */
+
+.new-logo {
+  text-align: center;
+  width: auto;
+  /*height: 10px;*/
+  /*margin: auto;*/
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+.new-logo b{
+  font: "Vibur" !important;
+  color: #fff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.new-logo b span{
+  animation: blink linear infinite 2s;
+}
+.new-logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+/*custom logo style end*/

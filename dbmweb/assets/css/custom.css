@@ -1,0 +1,48 @@
+.sidebar .navbar-nav li > a.active {
+    background-color: #495574;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+    img.logo-image-radius
+    {
+        border-radius: 50%;
+    }
+
+    .header .header-logo a
+    {
+        font-size: 30px;
+        color: white;
+        font-weight: 600
+    }
+
+
+
+    .w-full {
+        width: 100%;
+    }
+
+  
+
+.profile-area .custom-boxs ul li a{
+        justify-content: center;
+}
+
+.product-box{
+    padding: 8px 8px;
+        margin-bottom: 8px;
+}
+
+.page-content.space-top.p-b80 {
+    padding-bottom: 50px;
+}
+
+.menubar-area .menubar-nav .nav-link span {
+    font-size: 12px;
+    display: block;
+    font-weight: 700;
+}
+
+.blog-title
+{
+        justify-content: center;
+}

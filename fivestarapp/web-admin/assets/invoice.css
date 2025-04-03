@@ -1,0 +1,66 @@
+.main_invoice{
+	width:80%;
+	margin:0 auto;
+}
+.main_invoice p{
+	margin:0px !important;
+ }
+.tdf tr td{
+	border:1px solid #1b1212 !important;
+}
+.tdf tr th{
+	border:1px solid #1b1212 !important;
+}
+.table_footer tr td{
+	border:0px !important;
+}
+
+.invoice_header{margin:0px;border:0px;border-bottom: 1px solid #ccc;}
+.invoice_header tr{border:0px !important;} 
+.invoice_header td{border:0px !important;} 
+.invoice_right_header{text-align:right;}
+.invoice_right_header h2{margin:0px;padding:0px;font-size:25px;}
+.invoice_right_header p{margin:0px;padding:0px;line-height:18px;}
+.invoice_right_header p strong{font-weight: 600;}
+ 
+ 
+.invoice_dates{margin:0px;padding:0px;}
+.invoice_dates h3{font-size:20px;margin:0px;padding:0px;margin-bottom:05px;}
+.invoice_dates p{margin:0px;padding:0px;}
+
+
+.invoice_to{margin:0px;padding:0px;}
+.invoice_to h3{font-size:20px;margin:0px;padding:0px;margin-bottom:05px;}
+.invoice_to p{margin:0px;padding:0px;}
+ 
+ 
+ .bank_to{margin:0px;padding:0px;}
+.bank_to h3{font-size:20px;margin:0px;padding:0px;margin-bottom:05px;}
+.bank_to p{margin:0px;padding:0px;    font-size: 12px;}
+ 
+ .signat{margin:0px;padding:0px;}
+ .signat p{margin:0px;padding:0px;    font-size: 12px;}
+ #innermultiimg{
+	padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+ 
+.add_more_product_images{
+	    width: 100px;
+    height: 50px;
+    background: #1dd045;
+    padding: 5px 15px;
+    color: #fff;cursor:pointer;
+    border-radius: 5px;
+}
+
+.remove_more_product_images{
+	width: 100px;
+    height: 50px;
+    background: #f73b3b;
+    padding: 5px 15px;
+    color: #fff;cursor:pointer;
+    border-radius: 5px;
+}
+#show_img__error{color:#f00;}

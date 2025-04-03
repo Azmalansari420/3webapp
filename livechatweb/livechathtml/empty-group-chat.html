@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/empty-group-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:10:55 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatzy">
+    <meta name="keywords" content="Chatzy">
+    <meta name="author" content="Chatzy">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Chatzy App</title>
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#01AA85">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Chatzy">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css">
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header starts -->
+    <header id="header" class=" section-t-space main-header inner-page-header">
+        <div class="custom-container">
+            <div class="header-panel contact-panel">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="home.html">
+                        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                    </a>
+                    <a href="group-info.html" class="profile-head">
+                        <div class="profile-img">
+                            <img class="img-fluid img" src="assets/images/profile/p10.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold">Stars <img src="assets/images/svg/ring.svg" alt="ring">
+                            </h4>
+                            <h6 class="fw-normal">6 People</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center gap-sm-3 gap-2">
+                    <a href="#call" data-bs-toggle="modal">
+                        <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                    </a>
+
+                    <div class="dropdown more-options dropdown-menu-end">
+                        <a class="btn dropdown-toggle mt-0 p-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="iconsax icon-btn" data-icon="menu-meatballs"> </i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="group-info.html" class="dropdown-item"> <i class="iconsax icon"
+                                        data-icon="group"></i>
+                                    View Info</a>
+                            </li>
+
+                            <li>
+                                <a href="#" id="reply-btn" class="dropdown-item p-0">
+                                    <img class="img-fluid icon" src="assets/images/svg/reply-all.svg" alt="reply">Reply
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown-item"> <i class="iconsax icon" data-icon="star"></i>
+                                    Mute Notification</a>
+                            </li>
+                            <li><a href="default-wallpaper.html" class="dropdown-item"> <i class="iconsax icon"
+                                        data-icon="picture-add"></i>
+                                    Wallpaper</a>
+                            </li>
+
+                            <li><a href="#clear-chat" data-bs-toggle="modal" class="dropdown-item"> <i
+                                        class="iconsax icon" data-icon="brush-2"></i>
+                                    Clear Chat</a>
+                            </li>
+                            <li><a href="#block" data-bs-toggle="modal" class="dropdown-item error-color"> <i
+                                        class="iconsax icon error" data-icon="shield-slash"></i>
+                                    Block</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- empty group chat section starts -->
+    <section class="empty-section pt-0">
+        <div class="custom-container">
+            <h6 class="fw-normal content-color text-center heading">You created “Stars” group</h6>
+            <div class="empty-background-img">
+                <img class="img-fluid empty-img" src="assets/images/gif/empty-group-chat.gif" alt="empty-group-chat">
+                <h3>No Messages Here Yet</h3>
+                <p>Send a message or tap the greeting above & be the first one to start message.</p>
+            </div>
+        </div>
+    </section>
+    <!-- empty group chat section end -->
+
+    <!-- call modal starts -->
+    <div class="modal fade add-modal" id="call" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Call Type</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="story-list">
+                        <li>
+                            <a href="group-audio-call-received.html" class="story-types-box">
+
+                                <div class="story-image">
+                                    <img src="assets/images/svg/call-fill.svg" alt="call">
+                                </div>
+                                <h5>Audio Call</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="group-video-call-received.html" class="story-types-box">
+
+                                <div class="story-image">
+                                    <img src="assets/images/svg/video-fill.svg" alt="video">
+                                </div>
+                                <h5>Video Call</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- call modal end  -->
+
+    <!-- iconsax js -->
+    <script src="assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sticky-header js -->
+    <script src="assets/js/sticky-header.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+</body>
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/empty-group-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:10:56 GMT -->
+</html>

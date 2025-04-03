@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1",
+        "dompdf/dompdf": "^3.0",
+        "kreait/firebase-php": "^0.7.0"
+    }
+}

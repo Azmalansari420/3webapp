@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from askbootstrap.com/preview/adopet/app-appearance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 09:20:05 GMT -->
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="img/logo.png" type="image/png">
+      <title>Adopet - Pet Adoption Mobile App Template</title>
+      <!-- Bootstrap css -->
+      <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+      <!-- Bootstrap icon -->
+      <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.10.3/font/bootstrap-icons.css">
+      <!-- Sidebar css -->
+      <link rel="stylesheet" href="vender/sidebar/demo.css">
+      <!-- Matrial Icons -->
+      <link rel="stylesheet" href="vender/materialdesign/css/materialdesignicons.min.css">
+      <!-- Custom css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="osahan-page d-flex flex-column vh-100 bg-light">
+         <div class="osahan-page-header d-flex align-items-center justify-content-between mb-auto p-3 bg-white shadow-sm">
+            <a href="account.html" class="text-black"><span class="mdi mdi-arrow-left mdi-18px"></span></a>
+            <h6 class="mb-0 ms-3 me-auto text-black fw-bold">App Appearance</h6>
+            <div class="d-flex align-items-center gap-3">
+               <a href="notification.html" class="icon"><span class="mdi mdi-bell-outline mdi-18px"></span></a>
+               <a href="#" class="toggle d-flex align-items-center justify-content-center bg-white icon fs-5 hc-nav-trigger hc-nav-1" role="button" aria-controls="hc-nav-1"><i class="bi bi-list mdi-18px"></i></a>
+            </div>
+         </div>
+         <div class="osahan-page-body vh-100 my-auto overflow-auto p-3">
+            <a href="#" class="d-flex align-items-center gap-4 mb-4 text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+               <h5 class="text-black mb-0">Theme</h5>
+               <div class="ms-auto d-flex gap-3 text-black">
+                  <h6 class="mb-0">Light</h6>
+                  <span class="material-symbols-outlined fs-6">arrow_forward_ios</span>
+               </div>
+            </a>
+            <a href="app-language.html" class="d-flex align-items-center gap-4 mb-4 text-decoration-none text-black">
+               <h5 class="mb-0">App Language</h5>
+               <div class="ms-auto d-flex gap-3 text-black">
+                  <h6 class="mb-0">English (US)</h6>
+                  <span class="material-symbols-outlined fs-6">arrow_forward_ios</span>
+               </div>
+            </a>
+         </div>
+         <div class="osahan-page-footer mt-auto p-3">
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+         <div class="offcanvas-body small">
+            <div class="py-4 border-bottom text-center">
+               <h3 class="text-black fw-semibold mb-0">Choose Theme</h3>
+            </div>
+            <!-- Pet types-->
+            <div class="py-4 border-bottom vstack gap-4">
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-btn">
+                  <label class="form-check-label ms-3 fs-5" for="flexRadioDefault1">System Default</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-btn" checked="">
+                  <label class="form-check-label ms-3 fs-5" for="flexRadioDefault2">Light</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-btn">
+                  <label class="form-check-label ms-3 fs-5" for="flexRadioDefault1">Dark</label>
+               </div>
+            </div>
+            <div class="d-flex gap-3 justify-content-center py-4">
+               <a href="#" type="button" class="btn btn-outline-primary rounded-pill w-100 btn-lg" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</a>
+               <button type="button" class="btn btn-primary rounded-pill w-100 btn-lg"data-bs-dismiss="offcanvas" aria-label="Close">OK</button>
+            </div>
+         </div>
+      </div>
+      <!-- sidebar nav -->
+      <nav id="main-nav">
+         <ul class="second-nav">
+            <li class="osahan-user-profile bg-primary">
+               <div class="d-flex align-items-center gap-2">
+                  <img src="img/avatar/2.jpg" alt="" class="rounded-pill img-fluid cw-30">
+                  <div class="ps-1">
+                     <h6 class="fw-bold text-white mb-0">Hey, Samantha!</h6>
+                     <p class="text-white-50 m-0 small">+91 12345-67890</p>
+                  </div>
+               </div>
+            </li>
+            <li><a href="index.html"><span class="mdi mdi-cellphone me-3"></span>Splash</a></li>
+            <li>
+               <a href="#"><span class="mdi mdi-login me-3"></span>Authentication</a>
+               <ul>
+                  <li><a href="intro-1.html">Landing</a></li>
+                  <li><a href="login.html">Welcome</a></li>
+                  <li><a href="register.html">Sign up</a></li>
+                  <li><a href="step-1.html">Step 1</a></li>
+                  <li><a href="step-2.html">Step 2</a></li>
+                  <li><a href="step-3.html">Step 3</a></li>
+                  <li><a href="step-4.html">Step 4</a></li>
+                  <li><a href="login-input.html">Sign in</a></li>
+                  <li><a href="otp-code.html">OTP Code</a></li>
+                  <li><a href="secure-account.html">Secure Account</a></li>
+                  <li><a href="forget-password.html">Forget Password</a></li>
+               </ul>
+            </li>
+            <li><a href="notification.html"><span class="mdi mdi-bell-outline me-3"></span>Notification</a></li>
+            <li><a href="home.html"><span class="mdi mdi-home-variant-outline me-3"></span>Homepage</a></li>
+            <li><a href="pet-search.html"><span class="mdi mdi-note-search-outline me-3"></span>Pet Search</a></li>
+            <li><a href="search-result.html"><span class="mdi mdi-card-bulleted-outline me-3"></span>Search Result</a></li>
+            <li><a href="pet-datils.html"><span class="mdi mdi-credit-card-chip-outline me-3"></span>Pet Details</a></li>
+            <li><a href="owner-organiztion.html"><span class="mdi mdi-shield-account-outline me-3"></span>Owner Organiztion</a></li>
+            <li>
+               <a href="#"><span class="mdi mdi-format-list-checkbox me-3"></span>Listing Pages</a>
+               <ul>
+                  <li><a href="my-preferences.html">My Preferences</a></li>
+                  <li><a href="map.html">Map</a></li>
+                  <li><a href="favorite.html">Favorite</a></li>
+                  <li><a href="rabbits-details.html">Pets List</a></li>
+               </ul>
+            </li>
+            <li><a href="message.html"><span class="mdi mdi-message-processing-outline me-3"></span>Message</a></li>
+            <li><a href="chat.html"><span class="mdi mdi-chat-processing-outline me-3"></span>Chat</a></li>
+            <li><a href="audio-call.html"><span class="mdi mdi-phone-outline me-3"></span>Audio Call</a></li>
+            <li><a href="video-call.html"><span class="mdi mdi-video-outline me-3"></span>Video Call</a></li>
+            <li>
+               <a href="#"><span class="mdi mdi-account-outline me-3"></span>My Profile</a>
+               <ul>
+                  <li><a href="account.html">Account</a></li>
+                  <li><a href="my-profile.html">My Profile</a></li>
+                  <li><a href="linked-account.html">Linked Account</a></li>
+                  <li><a href="data-analytics.html">Data Analytics</a></li>
+                  <li><a href="account-security.html">Account Security</a></li>
+                  <li><a href="profile-notification.html">Profile Notification</a></li>
+               </ul>
+            </li>
+            <li><a href="contact-support.html"><span class="mdi mdi-lifebuoy me-3"></span>Contact Support</a></li>
+            <li><a href="help-support.html"><span class="mdi mdi-help-circle-outline me-3"></span>Help Support</a></li>
+            <li><a href="faq.html"><span class="mdi mdi-cellphone me-3"></span>Faq</a></li>
+            <li>
+               <a href="#"><span class="mdi mdi-account-outline me-3"></span>Extra Pages</a>
+               <ul>
+                  <li><a href="app-language.html">Select Language</a></li>
+                  <li><a href="terms-service.html">Terms Service</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="app-appearance.html">App Appearance</a></li>
+               </ul>
+            </li>
+         </ul>
+         <ul class="bottom-nav">
+            <li class="home">
+               <a href="home.html">
+                  <p class="h5 m-0"><span class="mdi mdi-home-variant-outline"></span></p>
+                  Home
+               </a>
+            </li>
+            <li class="find">
+               <a href="pet-search.html">
+                  <p class="h5 m-0"><span class="mdi mdi-magnify"></span></p>
+                  Search
+               </a>
+            </li>
+            <li class="more">
+               <a href="account.html">
+                  <p class="h5 m-0"><span class="mdi mdi-account-circle-outline"></span></p>
+                  Profile
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <!-- Bootstrap bundle js -->
+      <script src="vender/bootstrap/js/bootstrap.bundle.min.js" type="6c4bc3120d518d0e575f2b8b-text/javascript"></script>
+      <!-- Jquery js -->
+      <script src="vender/jquery/jquery.min.js" type="6c4bc3120d518d0e575f2b8b-text/javascript"></script>
+      <!-- Sidebar js -->
+      <script src="vender/sidebar/hc-offcanvas-nav.js" type="6c4bc3120d518d0e575f2b8b-text/javascript"></script>
+      <!-- Custom js -->
+      <script src="js/script.js" type="6c4bc3120d518d0e575f2b8b-text/javascript"></script>
+   <script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6c4bc3120d518d0e575f2b8b-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"920aee146e8f409b","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from askbootstrap.com/preview/adopet/app-appearance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 09:20:05 GMT -->
+</html>

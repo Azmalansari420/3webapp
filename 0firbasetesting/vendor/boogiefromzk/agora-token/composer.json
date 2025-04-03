@@ -1,0 +1,13 @@
+{
+    "name": "boogiefromzk/agora-token",
+    "description": "Intended to make Agora Tools for PHP repository folder as a package installable with Composer.",
+    "autoload": {
+        "psr-4": {
+            "BoogieFromZk\\AgoraToken\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "license": "ISC"
+}

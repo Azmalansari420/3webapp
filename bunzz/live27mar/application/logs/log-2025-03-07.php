@@ -1,0 +1,9 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-03-07 10:45:59 --> Query error: Column 'admin_username' cannot be null - Invalid query: INSERT INTO `activity_records` (`ip_addreass`, `url`, `date`, `time`, `admin_id`, `admin_username`, `admin_password`) VALUES ('2405:201:4026:f0c7:f985:c11b:e487:fcb', 'https://digitalnamo.com/bunzzapp/admin/dashboard', '2025-03-07', '10:45:59 AM', '2', NULL, 'admin')
+ERROR - 2025-03-07 10:46:00 --> 404 Page Not Found: Assets/img
+ERROR - 2025-03-07 10:46:00 --> Query error: Column 'admin_username' cannot be null - Invalid query: INSERT INTO `activity_records` (`ip_addreass`, `url`, `date`, `time`, `admin_id`, `admin_username`, `admin_password`) VALUES ('2405:201:4026:f0c7:f985:c11b:e487:fcb', 'https://digitalnamo.com/bunzzapp/admin_con/finalorder/listing', '2025-03-07', '10:46:00 AM', '2', NULL, 'admin')
+ERROR - 2025-03-07 10:46:02 --> 404 Page Not Found: admin_con/Assets/img
+ERROR - 2025-03-07 10:46:02 --> Query error: Column 'admin_username' cannot be null - Invalid query: INSERT INTO `activity_records` (`ip_addreass`, `url`, `date`, `time`, `admin_id`, `admin_username`, `admin_password`) VALUES ('2405:201:4026:f0c7:f985:c11b:e487:fcb', 'https://digitalnamo.com/bunzzapp/admin_con/finalorder/edit/33', '2025-03-07', '10:46:02 AM', '2', NULL, 'admin')
+ERROR - 2025-03-07 10:46:03 --> 404 Page Not Found: admin_con/Finalorder/assets
+ERROR - 2025-03-07 10:46:05 --> Query error: Column 'admin_username' cannot be null - Invalid query: INSERT INTO `activity_records` (`ip_addreass`, `url`, `date`, `time`, `admin_id`, `admin_username`, `admin_password`) VALUES ('2405:201:4026:f0c7:f985:c11b:e487:fcb', 'https://digitalnamo.com/bunzzapp/admin_con/finalorder/invoice/33', '2025-03-07', '10:46:05 AM', '2', NULL, 'admin')

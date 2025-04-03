@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/private-audio-call-received.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:11:40 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatzy">
+    <meta name="keywords" content="Chatzy">
+    <meta name="author" content="Chatzy">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Chatzy App</title>
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#01AA85">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Chatzy">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="overflow-hidden">
+    <header id="header" class=" section-t-spacee main-header">
+        <div class="custom-container">
+            <div class="header-panel contact-panel border-0 pb-0">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="private-chat.html">
+                        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                    </a>
+                    <h4 class="fw-semibold dark-text">You and 5 others</h4>
+                </div>
+                <h5 class="call-timing">10:45</h5>
+            </div>
+        </div>
+    </header>
+
+    <!-- call section starts -->
+    <section>
+        <div class="custom-container">
+            <div class="call-img">
+                <img class="img-fluid call-bg-img" src="assets/images/call-bg.svg" alt="call">
+                <img class="img-fluid profile-img" src="assets/images/profile/p9.png" alt="p9">
+            </div>
+        </div>
+
+        <div class="call-button-section">
+            <div class="option-buttons">
+                <a href="#" class="sub-button">
+                    <i class="iconsax option-icon" data-icon="video-1"> </i>
+                </a>
+                <a href="#" class="sub-button">
+                    <i class="iconsax option-icon" data-icon="mic-slash-2"> </i>
+                </a>
+            </div>
+            <div class="call-buttons">
+                <a href="#" class="main-button">
+                    <i class="iconsax option-icon theme-option-icon" data-icon="volume-high"> </i>
+                </a>
+                <a href="private-chat.html" class="main-button">
+                    <img class="img-fluid icon icon-original error-bg" src="assets/images/svg/phone.svg" alt="phone">
+                </a>
+                <a href="#" class="main-button">
+                    <i class="iconsax option-icon theme-option-icon" data-icon="user-1-add"> </i>
+                </a>
+            </div>
+            <a href="#calling" data-bs-toggle="offcanvas">
+                <img class="img-fluid arrow-up" src="assets/images/svg/arrow-up.svg" alt="arrow-up">
+            </a>
+        </div>
+    </section>
+    <!-- call section end -->
+
+    <!-- calling offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom calling-offcanvas" id="calling" tabindex="-1">
+        <div class="offcanvas-body p-0">
+            <div class="offcanvas-content">
+                <ul class="attend-person-list">
+                    <li>
+                        <div class="person-img mic">
+                            <img class="img-fluid person-pic mic" src="assets/images/profile/p1.png" alt="p1">
+                            <i class="iconsax icon" data-icon="mic-2"> </i>
+                        </div>
+                        <h6>You</h6>
+                    </li>
+
+                </ul>
+
+                <a href="#add-people" class="btn add-person-btn w-100 mt-4" data-bs-toggle="offcanvas">+ Add
+                    New People</a>
+            </div>
+
+            <ul class="calling-option-button">
+                <li>
+                    <a href="#" class="main-button">
+                        <i class="iconsax option-icon theme-option-icon" data-icon="volume-high"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main-button">
+                        <i class="iconsax option-icon" data-icon="video-1"> </i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="main-button">
+                        <i class="iconsax option-icon" data-icon="mic-slash-2"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html" class="main-button">
+                        <img class="img-fluid icon icon-original error-bg" src="assets/images/svg/phone.svg"
+                            alt="phone">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- calling offcanvas starts -->
+
+    <!-- add people offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom add-people-offcanvas" id="add-people" tabindex="-1">
+        <div class="offcanvas-body p-0">
+            <div class="members-part mt-0 border-0">
+                <div class="member-title">
+                    <h5>Add More People</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <ul class="members-list">
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p1.png" alt="p1">
+                                <div>
+                                    <h5>You </h5>
+                                    <h6>Happy <img src="assets/images/svg/smiling-eyes.svg" alt="smiling-eyes"></h6>
+                                </div>
+                            </div>
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p2.png" alt="p1">
+                                <div>
+                                    <h5>Michael</h5>
+                                    <h6>Hey ! <img src="assets/images/svg/blushing-eyes.svg" alt="blushing-eyes">
+                                    </h6>
+                                </div>
+                            </div>
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p3.png" alt="p1">
+                                <div>
+                                    <h5>Kistin</h5>
+                                    <h6>Happy Ever After <img src="assets/images/svg/halo.svg" alt="halo"></h6>
+                                </div>
+                            </div>
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p4.png" alt="p1">
+                                <div>
+                                    <h5>trunk</h5>
+                                    <h6>God is Best </h6>
+                                </div>
+                            </div>
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p5.png" alt="p1">
+                                <div>
+                                    <h5>Aathryn Murphy</h5>
+                                    <h6>nothing is Impossible <img src="assets/images/svg/100.svg" alt="100">
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p6.png" alt="p1">
+                                <div>
+                                    <h5>John</h5>
+                                    <h6>Available <img src="assets/images/svg/smiling-eyes.svg" alt="smiling-eyes">
+                                    </h6>
+                                </div>
+                            </div>
+                            <a href="#option" data-bs-toggle="modal">
+                                <i class="iconsax icon-btn" data-icon="phone-add"> </i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- add people offcanvas starts -->
+
+    <!-- iconsax js -->
+    <script src="assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sticky-header js -->
+    <script src="assets/js/sticky-header.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+</body>
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/private-audio-call-received.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:11:40 GMT -->
+</html>

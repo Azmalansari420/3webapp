@@ -1,0 +1,403 @@
+:root {
+    --myPrimaryColor: rgb(4, 34, 48);
+    --myPrimaryBGColorLight: rgb(231, 247, 255);
+    --myPrimaryColorLight: rgb(44, 157, 214);
+    --textLightColor: white;
+    --textDarkColor: rgb(4, 34, 48);
+}
+
+body {
+    background-color: var(--myPrimaryBGColorLight);
+}
+
+#root {
+
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.rombus {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: var(--bs-red);
+    color: var(--textLightColor);
+}
+
+.squre {
+    width: 6rem;
+    height: 6rem;
+}
+
+.font-rubik {
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.live-result-box {
+
+    background-image: url(../img/giphy.gif);
+}
+.letest_result_box {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#tablemonth3 {
+    background: #770d34;
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    background: black;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.resulttopdiv {
+
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 12px; */
+    /* margin: 10px; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px #ccc; */
+    font-size: 25px;
+    /* background: #f44336; */
+    color: white;
+    width: 100%;
+    min-width: 200px;
+    text-align: center;
+}
+
+.lresultletest {
+
+
+
+    padding: 1px 28px;
+    font-size: 40px;
+
+}
+
+.today_table tbody tr>td:nth-child(1),
+.today_table thead tr>th:nth-child(1) {
+    background: #0277bd;
+}
+
+.today_table tbody tr>td:nth-child(2),
+.today_table thead tr>th:nth-child(2) {
+    background: #d81b60;
+}
+
+.today_table tbody tr>td:nth-child(3),
+.today_table thead tr>th:nth-child(3) {
+    background: #ffa000;
+}
+
+.today_table tbody tr>td:nth-child(4),
+.today_table thead tr>th:nth-child(4) {
+    background: #d32f2f;
+}
+
+.ltime {
+    font-size: 20px;
+}
+
+.lresult {
+    font-size: 42px;
+
+
+
+    text-align: center;
+    border-radius: 7px;
+}
+
+:root {
+    --first: #161616;
+    --sec: #346751;
+    --third: #c84b31;
+    --fouth: #ecdbba;
+    --text-first: #161616;
+    --text-sec: #346751;
+    --text-third: #c84b31;
+    --text-fouth: #ecdbba;
+    --white: white;
+    --black: black;
+}
+
+.myheader {
+    background: var(--first);
+    color: var(--white);
+    font-size: 20px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.jfjc {
+    display: flex;
+    justify-content: center;
+}
+
+.ic {
+    align-items: center;
+}
+
+.jumbo>img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.jk_text {
+    position: absolute;
+    left: 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .jk_text {
+        display: none;
+
+    }
+
+}
+
+.head_text {
+    flex-direction: column;
+    background: var(--sec);
+    color: var(--white);
+}
+
+.satta_king {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-fouth);
+}
+
+.Live_game_resut {
+    background-image: url(images/livestars.html);
+    background-size: cover;
+    flex-direction: column;
+    color: white;
+    padding: 14px;
+
+}
+
+.Live_game_resut .img>img {
+    width: 70px;
+}
+
+.liveresult {
+    font-size: 21px;
+    color: white;
+}
+
+.myliverresults {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 21px;
+    width: 100%;
+}
+
+.tophalf1 {
+    text-align: center;
+    background: #420042;
+    width: 100%;
+    padding: 10px;
+}
+
+.tophalf2 {
+    padding: 0px 20px;
+    background: #07000e;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.live_result_text {
+    font-size: 16px;
+    padding: 5px 10px;
+    box-shadow: 0 0 4px black;
+    margin-top: 10px;
+    border-radius: 0px;
+
+}
+
+
+
+    .laxmi-number {
+        background: #0d5778;
+        color: white;
+        padding: 15px;
+
+    }
+
+    .head_name {
+        background: black;
+    }
+
+    .marquee {
+        background: white;
+        font-size: 20px;
+    }
+
+
+    .ldated {
+        font-size: 12px;
+    }
+
+    .mrname {
+        text-transform: capitalize;
+    }
+
+    .month_table {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .mrname {
+        font-size: 22px;
+    }
+
+    .month_table .table {
+        text-align: center;
+    }
+
+    .month_table .table td {
+        vertical-align: middle;
+    }
+
+    th {
+        text-align: center !important;
+    }
+
+    .table11 tbody {
+        /* background: #ff5722; */
+        color: white;
+    }
+
+    .table12 tbody {
+        /*background: #009688;*/
+        ;
+        color: #dc3545;
+        font-weight: 700;
+    }
+
+    .table21 tbody {
+        /* background: #631e08;
+        color: white; */
+    }
+
+    .table22 tbody {
+        /*background: #07554e;*/
+        ;
+        ;
+        color: white;
+    }
+
+    .table22 thead,
+    .table21 thead {
+        /* background: black; */
+    }
+
+    .table13 {
+        color: white;
+    }
+
+    .table13 tbody {
+        background: cadetblue;
+    }
+
+    /*Table head color*/
+    .table11 .head_name td {
+        /* background: var(--myPrimaryColor); */
+    }
+
+    .table12 .head_name td {
+        /*background: #610000;*/
+    }
+
+    .table13 .head_name td {
+        background: #c2185b;
+    }
+
+    /*Table body  color*/
+    .table11 td {
+        /* background: var(--myPrimaryColor); */
+    }
+
+    .table12 td {
+        /*background: #610000;*/
+    }
+
+    .table13 td {
+        background: #c2185b;
+    }
+
+    /* Month TableTable  body  color*/
+    .table11 td {
+        /* background: var(--myPrimaryColor); */
+    }
+
+    .table12 td {
+        /*background: #610000;*/
+    }
+
+    .table13 td {
+        background: #c2185b;
+    }
+
+    /*Month chart style */
+    .month_table .table21 tr th {
+        /* background: #0b1458; */
+    }
+
+    .month_table .table21 tbody tr td {
+        /* background: var(--myPrimaryColor); */
+    }
+
+
+    .month_table .table22 tr th {
+        /*background: #330101;*/
+    }
+
+    .month_table .table22 tbody tr td {
+        /*background: #610000;*/
+    }
+
+
+    .month_table .table23 tr th {
+        background: #821c44;
+    }
+
+    .month_table .table23 tbody tr td {
+        background: #c2185b;
+    }
+
+
+
+    .mrname {
+        background: black;
+        color: white;
+    }
+
+    .month_table {
+        background-color: #03a9f4;
+        color: white;
+    }
+
+    .month_table .table tr td,
+    .month_table .table tr th {
+        background-color: #00000040;
+        color: white;
+        padding: 0px;
+    }
+	.logo{
+		margin:0px auto;
+		display: block;
+	}

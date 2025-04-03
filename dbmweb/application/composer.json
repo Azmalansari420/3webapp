@@ -1,0 +1,6 @@
+{
+    "require": {
+        "simplesoftwareio/simple-qrcode": "^4.2",
+        "endroid/qr-code": "^5.0"
+    }
+}

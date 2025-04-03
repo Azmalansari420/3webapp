@@ -1,0 +1,129 @@
+body 
+{
+        background-color: #121212 !important;
+    background-image: none;
+}
+
+header .head-content .logo {
+    width: 111px;
+}
+
+.order-listing li .product-details {
+    justify-content: space-between!important;
+}
+.order-listing li .product-details .product-content {
+    width: auto!important;
+}
+
+.navbar-menu ul li a {
+    color: rgb(214 214 214)!important;
+}
+
+section, .section-t-space {
+    padding-top: 10px;
+}
+
+.navbar-menu {
+    padding: 10px 10px!important;
+}
+
+
+
+/*----------------*/
+.order-listing li {
+    padding: 15px;
+    border: 1px solid #fffefe;
+}
+
+.auth-title h1 {
+    color: rgb(0 0 0);
+}
+
+header .head-content a i {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-29.29%, rgba(var(--theme-color), 0.55)), color-stop(122.14%, rgba(32, 93, 238, 0)));
+    background: rgba(var(--theme-color));
+}
+
+.sidebar-btn {
+    background: rgba(var(--theme-color));
+}
+
+.auth-form .form-label {
+/*    color: black;*/
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.auth-form .form-control {
+    border: 1px solid black !important;
+}
+
+.nft-horizontal-content h6 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.header-panel h3 {
+    font-weight: 600;
+/*    color: rgb(0 0 0);*/
+}
+
+.sidebar-offcanvas {
+    background-color: white!important;
+    background-image: none!important;
+}
+
+.sidebar-offcanvas .offcanvas-header h3 {
+    color: rgb(255 255 255)
+}
+
+.sidebar-offcanvas .sidebar-content .link-section li .pages h3 {
+    color: rgb(0 0 0);
+}
+
+.sidebar-offcanvas .sidebar-content .link-section li .pages i {
+    color: rgb(0 0 0);
+    font-size: 28px;
+}
+
+.sidebar-offcanvas .sidebar-content .link-section li {
+    display: block;
+    padding: 1px 5px;
+}
+
+.navbar-menu ul li a {
+    color: rgb(255 244 244) !important;
+}
+
+.offcanvas-header {
+    background: #102e77;
+}
+
+.header-panel i.ri-notification-2-line {
+/*    color: #102e77;*/
+    font-size: 25px;
+}
+
+
+.theme-accordion .accordion-item .accordion-button {
+/*     color: rgb(0 0 0)!important;*/
+     font-weight: 500;
+}
+.text-content {
+/*    color: rgb(53 50 50);*/
+    font-size: 14px;
+}
+.notification-listing li .notification-details .notification-content h4 {
+    font-weight: 600;
+    margin: 0;
+    color: rgb(0 0 0);
+}
+
+@media (max-width: 767px) 
+{
+    h4 {
+        color: #fffefe !important;
+        font-weight: 700;
+    }
+}

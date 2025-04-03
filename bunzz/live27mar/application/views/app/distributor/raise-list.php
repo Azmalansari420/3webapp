@@ -1,0 +1,209 @@
+<?php
+// print_r($full_detail->id);
+$this->load->view('app/include/header'); 
+
+?>
+
+<style>
+    .nav-tabs.lined .nav-link.active {
+        background-color: #5f94bf;
+        border: 1px solid #5f94bf;
+        color: #ffffff;
+    }
+    .group-input>label {
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
+    .group-input {
+        margin-bottom: 10px;
+    }
+    .box-components {
+        padding: 6px 5px;
+    }
+    .nav-tabs .nav-item .nav-link {
+/*        border: 0;*/
+        color: #1e1e1e;
+        font-size: 14px;
+        line-height: 15px;
+        border-bottom: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 7px 7px;
+        border: 1px solid black;
+    }
+    .icon-plus:before {
+        font-size: 24px;
+    }
+        
+        .icon-home:before {
+        font-size: 24px;
+    }
+    .tf-statusbar .back-btn2 {
+        left: 16px;
+        position: absolute;
+    }
+    .back-btn2, .icon-close {
+        min-width: 44px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    i.icon-clear {
+    color: red;
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+}
+</style>
+    <div class="header is-fixed">
+        <div class="tf-container">
+            <div class="tf-statusbar d-flex justify-content-center align-items-center">
+                <a href="home.php" class="back-btn2"> <i class="icon-home"></i> </a>
+                <h3>Grievances</h3>
+                <a href="raise-add.php" class="action-right"><i class="icon-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="app-content">
+        <div class="tf-container">
+            <div class="">
+                <div class="tf-tab box-components">
+                    <div class="tab-content mt-4">
+
+                        <div class="tab-pane fade show active" id="tabIcon1" role="tabpanel">
+                            <button id="downloadExcel" class="btn btn-primary">Download Excel</button>
+                            <ul class="mt-3 mb-5">
+                              <?php
+                                $this->db->order_by('id desc');
+                                $users = $this->crud->selectDataByMultipleWhere('raise_distributer_to_so', array('distributer_id' => $full_detail->id,));
+
+                                if (!empty($users)) {
+                                    foreach ($users as $data) 
+                                    {
+                                        $addeddate = $data->modifieddate;
+                                        $addedTimestamp = strtotime($addeddate);
+                                        $currentTimestamp = time();
+                                        
+                                ?>
+                                    <li class="list-card-invoice">
+                                        <div class="logo">
+                                            <img src="" onerror="this.src='<?= base_url() ?>media/uploads/1725100321.jpg'">
+                                        </div>
+                                        <div class="content-right">
+                                            <h4>
+                                                <?php
+                                                if($data->status==1)
+                                                    { ?>
+                                                <a href="<?= ('distributor/raise-add.php?id=' . $data->id) ?>">
+                                                <?php } else {?>
+                                                    <a href="javascript:;">
+                                                <?php } ?>
+                                                    <?=raiseissue($data->issue_type) ?>
+                                                
+                                                <div>
+                                                    <?=raiseexcel($data->status) ?>
+                                                    </div>
+                                                </a>
+                                            </h4>
+                                            <p><?= $data->message ?> </p>
+                                        </div>
+                                    </li>
+                                <?php } } ?>
+
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+
+
+<?php $this->load->view('app/include/sidebar'); ?>
+<?php $this->load->view('app/include/notification'); ?>
+<?php $this->load->view('app/include/footer'); ?>
+
+<script>
+
+
+     $(document).ready(function () {
+        $('#downloadExcel').on('click', function () {
+            $.ajax({
+                url: '<?=base_url() ?>api/distributor/raiseexceldata',
+                type: 'POST',
+                success: function (response) {
+                    const res = JSON.parse(response);
+                    if (res.status === 200) 
+                    {
+                        const link = document.createElement('a');
+                        link.href = res.file_url;
+                        link.download = res.file_url.split('/').pop();
+                        link.click();
+                    } else {
+                        alert(res.message || 'Failed to download Excel file.');
+                    }
+                },
+                error: function () {
+                    alert('An error occurred. Please try again.');
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
+
+
+    var id = 0; 
+    $(document).on("click", ".delete-btn",(function(e) {
+       id = $(this).data('id');
+      delete_target();
+    }));
+
+    function delete_target()
+    {
+        var form = new FormData();
+        form.append("id", id);
+
+        var settings = {
+          "url": "<?=base_url() ?>api/nsm/delete_target",
+          "method": "POST",
+          "dataType": "json",
+          "timeout": 0,
+          "processData": false,
+          "mimeType": "multipart/form-data",
+          "contentType": false,
+          "data": form
+        };
+
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+          if(response.status == 200) 
+            {
+              toaster(response.message, 'success');
+              setTimeout(function() {
+                window.location.href = response.url;
+              }, 200); 
+            } 
+            else 
+            {
+              toaster(response.message, 'success');
+            }
+        });
+    }
+
+</script>

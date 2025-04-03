@@ -1,0 +1,15 @@
+{
+  "background_color": "#612657",
+  "description": "Wedo: Ecommerce Mobile App Template ( Bootstrap + PWA )",
+  "display": "standalone",
+  "icons": [
+	{
+	  "src": "assets/images/pwa150x150.png",
+	  "sizes": "150x150",
+	  "type": "image/png"
+	}
+  ],
+  "name": "wedo Ecommerce Mobile App",
+  "short_name": "Wedo",
+  "start_url": "index.php"
+}

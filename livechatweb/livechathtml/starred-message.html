@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/starred-message.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:10:39 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatzy">
+    <meta name="keywords" content="Chatzy">
+    <meta name="author" content="Chatzy">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Chatzy App</title>
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#01AA85">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Chatzy">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css">
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header starts -->
+    <header id="header" class=" section-t-space main-header inner-page-header">
+        <div class="custom-container">
+            <div class="header-panel contact-panel">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="home.html">
+                        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                    </a>
+                    <div class="d-block">
+                        <h4 class="fw-semibold">Starred Messages</h4>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-sm-3 gap-2">
+                    <a href="#search-offcanvas" data-bs-toggle="offcanvas">
+                        <i class="iconsax icon-btn" data-icon="search-normal-2"> </i>
+                    </a>
+                    <a href="#unstar" data-bs-toggle="modal">
+                        <i class="iconsax icon-btn" data-icon="star-slash"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- starred message section start -->
+    <section class="section-b-space">
+        <div class="custom-container">
+            <ul class="starred-box-list">
+                <li>
+                    <div class="starred-box">
+                        <div class="starred-box-head">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="img-fluid person-img" src="assets/images/profile/p5.png" alt="p5">
+                                <div>
+                                    <h5>Johnny</h5>
+                                    <h6>You <span> | 10/12/2022</span></h6>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </a>
+                        </div>
+                        <div class="starred-box-details">
+                            <div class="starred-content">
+                                <h5>Google Password : 4896</h5>
+                            </div>
+                            <div class="starred-timing">
+                                <img class="img-fluid" src="assets/images/svg/star-fill.svg" alt="star">
+                                <h6>11:45 AM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="starred-box">
+                        <div class="starred-box-head">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="img-fluid person-img" src="assets/images/profile/p4.png" alt="p5">
+                                <div>
+                                    <h5>Justin</h5>
+                                    <h6>You <span> | 10/12/2022</span></h6>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </a>
+                        </div>
+                        <div class="starred-box-details ">
+                            <div class="starred-content ">
+                                <h5>I don’t know, what is the real reason. But i’m sure he is't wrong.</h5>
+                            </div>
+                            <div class="starred-timing">
+                                <img class="img-fluid" src="assets/images/svg/star-fill.svg" alt="star">
+                                <h6>11:45 AM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="starred-box own-starred-box">
+                        <div class="starred-box-head">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="img-fluid person-img" src="assets/images/profile/p1.png" alt="p1">
+                                <div>
+                                    <h5>You</h5>
+                                    <h6>Aenny <span> | 08/12/2022</span></h6>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </a>
+                        </div>
+                        <div class="starred-box-details">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="starred-content">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="assets/images/svg/pdf.svg" alt="pdf">
+                                    </div>
+                                    <div>
+                                        <h5>Smitten Shah 01.pdf</h5>
+                                        <h6>1 Page | PDF | 256 KB</h6>
+                                    </div>
+                                </div>
+                                <img class="replay-btn" src="assets/images/svg/reply.svg" alt="reply">
+                            </div>
+                            <div class="starred-timing">
+                                <img class="img-fluid" src="assets/images/svg/star-fill.svg" alt="star">
+                                <h6>11:45 AM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="starred-box own-starred-box">
+                        <div class="starred-box-head">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="img-fluid person-img" src="assets/images/profile/p1.png" alt="p5">
+                                <div>
+                                    <h5>You</h5>
+                                    <h6>Bristin <span> | 10/12/2022</span></h6>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </a>
+                        </div>
+                        <div class="starred-box-details">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="starred-content">
+                                    <div class="document-img">
+                                        <img class="img-fluid file-img" src="assets/images/svg/apk.svg" alt="apk">
+                                    </div>
+                                    <div>
+                                        <h5>Poster App.api</h5>
+                                        <h6>1 Page | API | 18 MB</h6>
+                                    </div>
+                                </div>
+                                <img class="replay-btn" src="assets/images/svg/reply.svg" alt="reply">
+                            </div>
+                            <div class="starred-timing">
+                                <img class="img-fluid" src="assets/images/svg/star-fill.svg" alt="star">
+                                <h6>11:45 AM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="starred-box">
+                        <div class="starred-box-head">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="img-fluid person-img" src="assets/images/profile/p6.png" alt="p5">
+                                <div>
+                                    <h5>Mike</h5>
+                                    <h6>You <span> | 10/12/2022</span></h6>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </a>
+                        </div>
+                        <div class="starred-box-details">
+                            <div class="starred-content">
+                                <div class="document-img">
+                                    <img class="img-fluid file-img" src="assets/images/svg/image.svg" alt="pdf">
+                                </div>
+                                <div>
+                                    <h5>Marriage.png</h5>
+                                    <h6>1 Image | PNG | 1.3 MB</h6>
+                                </div>
+                            </div>
+                            <div class="starred-timing">
+                                <img class="img-fluid" src="assets/images/svg/star-fill.svg" alt="star">
+                                <h6>11:45 AM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- starred message section end -->
+
+    <!-- search offcanvas starts -->
+    <div class="offcanvas offcanvas-top search-offcanvas" tabindex="-1" id="search-offcanvas">
+        <div class="offcanvas-header">
+            <a href="setting.html" data-bs-dismiss="offcanvas">
+                <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+            </a>
+            <div class="form-input">
+                <input type="search" class="form-control search" id="inputusername" placeholder="Search here...">
+                <i class="iconsax search" data-icon="search-normal-2"> </i>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="search-categories-list">
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/video.svg" alt="video">
+                        <h6>Video</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/gallery.svg" alt="video">
+                        <h6>Photos</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/headphone.svg" alt="video">
+                        <h6>Audios</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/document.svg" alt="video">
+                        <h6>Documents</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/gif.svg" alt="video">
+                        <h6>GIFs</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/link.svg" alt="video">
+                        <h6>Links</h6>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="search-categories-box">
+                        <img class="img img-fluid" src="assets/images/svg/message.svg" alt="video">
+                        <h6>Unread</h6>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- search offcanvas end -->
+
+    <!-- unstar modal starts -->
+    <div class="modal fade popup-modal" id="unstar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img class="img-fluid img" src="assets/images/unstar.png" alt="unstar">
+                    </div>
+                    <h2 class="dark-text">Unstar All Messages !!</h2>
+                    <h4 class="content-color">Are you sure you want to unstar all messages ?</h4>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="starred-message.html" class="btn btn-link modal-btn w-50  content-color m-0"
+                        data-bs-dismiss="modal">Cancel</a>
+                    <a href="home.html" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0">Yes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- unstar modal end -->
+
+    <!-- iconsax js -->
+    <script src="assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sticky-header js -->
+    <script src="assets/js/sticky-header.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+</body>
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/starred-message.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:10:41 GMT -->
+</html>

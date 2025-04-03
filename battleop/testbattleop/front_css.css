@@ -1,0 +1,430 @@
+<style>
+
+.modall-confirm {    
+  color: #434e65;
+  width: 100%;
+}
+.modall-confirm .modall-content {
+  padding: 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+.modall-confirm .modall-header {
+  background: #FFF;
+  border-bottom: none;   
+  position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 35px 0px;
+}
+.modall-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.modall-confirm .form-control, .modall-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px; 
+}
+.modall-confirm .close {
+position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #000 !important;
+    text-shadow: none;
+    opacity: 1 !important;
+    font-size: 28px;
+}
+.modall-confirm .close:hover,
+.modall-confirm .close:focus {
+    outline: none;
+    opacity: .6 !important;
+}
+.modall-confirm .icon-box {
+  color: #fff;    
+  width: 95px;
+  height: 95px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 9;
+  border: 5px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
+.modall-confirm .icon-box i {
+  font-size: 64px;
+  margin: -4px 0 0 -4px;
+}
+.modall-confirm.modall-dialog {
+
+    padding: 0 !important;
+}
+.modall-confirm .btn, .modall-confirm .btn:active {
+  color: #fff;
+  border-radius: 4px;
+  background: #eeb711 !important;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 6px 20px;
+  border: none;
+}
+.modall-confirm .btn:hover, .modall-confirm .btn:focus {
+  background: #eda645 !important;
+  outline: none;
+}
+.modall-confirm .btn span {
+  margin: 1px 3px 0;
+  float: left;
+}
+.modall-confirm .btn i {
+  margin-left: 1px;
+  font-size: 20px;
+  float: right;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+.show1 {
+    display: block !important;
+    opacity: 1 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0,0,0,0.5);
+}
+.modall-dialog.modall-confirm {
+    max-width: 500px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.modall-body p {
+    margin: 0;
+}
+.pop-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.popup {
+    background: white;
+    width: 450px;
+    border-radius: 6px;
+    padding: 35px 30px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close1 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #000;
+    opacity: 1;
+    z-index: 99;
+    text-shadow: none;
+}
+
+.body-loader:after {
+    content: "Loading....";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999999999999;
+    text-align: center;
+    font-size: 28px;
+    padding: 25%;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+@-webkit-keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 300px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 300px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 35px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 35px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#successAnimationCheck {
+    stroke-dasharray: 150px 150px;
+    stroke: #4bb543
+}
+
+#successAnimationCircle {
+    stroke-dasharray: 150px 150px;
+    stroke: #c4ecc1
+}
+
+#failureAnimationCheck {
+    stroke-dasharray: 35px 35px;
+    stroke: #f44336
+}
+
+#failureAnimationCircle {
+    stroke-dasharray: 150px 150px;
+    stroke: #fae3e1
+}
+
+#successAnimation.animated,
+#failureAnimation.animated {
+  -webkit-animation: 1s ease-out 0s 1 both scaleAnimation;
+          animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+#successAnimation.animated #successAnimationCircle,
+#successAnimation.animated #failureAnimationCircle,
+#failureAnimation.animated #successAnimationCircle,
+#failureAnimation.animated #failureAnimationCircle {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
+          animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
+}
+#successAnimation.animated #successAnimationCheck,
+#failureAnimation.animated #successAnimationCheck {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
+          animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
+}
+#successAnimation.animated .failureAnimationCheckLine,
+#failureAnimation.animated .failureAnimationCheckLine {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
+          animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
+}
+
+#animate {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  color: #4BB543;
+  outline: 0;
+}
+#animate:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+@media(max-width: 767px){
+.modall-dialog.modall-confirm {
+    width: 90%;
+    max-width: 90%;
+}
+}
+
+
+  
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+
+.configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: #1d2630;
+}
+
+/* PULSE BUBBLES */
+
+.pulse-container {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.custom-tost {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 9999999;
+    left: 0;
+}
+.custom-tost span {
+    background: #dfdcdc;
+    color: #4a4343;
+    padding: 3px 6px;
+    border-radius: 7px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+        font-size: 20px;
+}
+.custom-tost *{margin: 0;}
+.pulse-bubble {
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #36353a;
+}
+#preloader.show .preloader-inner {
+    display: inline-grid !important;
+}
+.pulse-bubble-1 {
+    animation: pulse .4s ease 0s infinite alternate;
+}
+.pulse-bubble-2 {
+    animation: pulse .4s ease .2s infinite alternate;
+}
+.pulse-bubble-3 {
+    animation: pulse .4s ease .4s infinite alternate;
+}
+
+.form-group {
+    position: relative;
+}
+.is-invalid {
+    box-shadow: 0px 0px 4px 2px #d30d0da1 !important;
+}
+.invalid-feedback {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    background: red;
+    width: 30px !important;
+    height: 30px !important;
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+}
+
+p.error {
+    display: block;
+    width: 100%;
+    margin-top: 5px !important;
+    margin: 0;
+}
+.update-btn {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 32px;
+}
+
+.invalid-feedback {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+ 

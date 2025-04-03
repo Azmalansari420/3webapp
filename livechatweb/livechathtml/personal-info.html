@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/personal-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:11:40 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatzy">
+    <meta name="keywords" content="Chatzy">
+    <meta name="author" content="Chatzy">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Chatzy App</title>
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#01AA85">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Chatzy">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="assets/css/vendors/bootstrap.css">
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header starts -->
+    <header id="header" class=" image-header-panel ratio_40 b-top">
+        <img class="bg-img group-head-bg" src="assets/images/background/personal-info.png" alt="p3">
+
+        <div class="header-panel">
+            <a href="private-chat.html">
+                <i class="iconsax icon-btn" data-icon="chevron-left"></i>
+            </a>
+
+            <div class="d-flex align-items-center gap-2">
+                <a href="#">
+                    <i class="iconsax icon-btn" data-icon="bell-1"></i>
+                </a>
+                <a href="#share" class="link-box" data-bs-toggle="modal">
+                    <i class="iconsax icon-btn" data-icon="send-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="name-panel">
+            <div>
+                <h2 class="fw-semibold text-white">Guy Hawkins</h2>
+                <h5>(+701) 74589 36521</h5>
+            </div>
+            <a href="#edit-details" data-bs-toggle="modal">
+                <i class="iconsax icon" data-icon="edit-1"></i>
+            </a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- info section starts -->
+    <section class="section-b-space pt-0">
+        <div class="custom-container">
+            <div class="group-details">
+                <h6>Status :</h6>
+                <p>|| Beyond the Boundaries ||</p>
+            </div>
+
+            <div class="file-part">
+                <ul class="file-list">
+                    <li>
+                        <a href="group-file.html">
+                            <h5>Media Files (12)</h5>
+                            <i class="iconsax icon" data-icon="chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="group-file.html">
+                            <h5>Document Files (12)</h5>
+                            <i class="iconsax icon" data-icon="chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="group-file.html">
+                            <h5>Link Files (12)</h5>
+                            <i class="iconsax icon" data-icon="chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="members-part">
+                <div class="member-title">
+                    <h5>Total People</h5>
+                    <span>3 Group</span>
+                </div>
+                <ul class="members-list">
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p10.png" alt="p1">
+                                <div>
+                                    <h5>Stars <img src="assets/images/svg/ring.svg" alt="ring"></h5>
+                                    <h6>Asther, Smith, Bountry, You</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p16.png" alt="p1">
+                                <div>
+                                    <h5>Nature Lover</h5>
+                                    <h6>Bheressa, Mutphy, Hawkins, Serlen, You</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-box">
+                            <div class="member-details">
+                                <img class="img-fluid img" src="assets/images/profile/p8.png" alt="p8">
+                                <div>
+                                    <h5>Trip Plan</h5>
+                                    <h6>Smitha, Seign, Kitly, Kreta, You</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- info section end-->
+
+    <!-- edit title modal starts -->
+    <div class="modal fade add-modal" id="edit-details" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="new-group-profile-box edit-details">
+                    <div class="position-relative">
+                        <div class="profile-image">
+                            <input id="file" type="file" class="change-file" onchange="loadFile(event)">
+                            <img class="img-fluid img" src="assets/images/profile/add-img.png" alt="profile">
+                            <i class="iconsax edit-icon" data-icon="edit-1"></i>
+                        </div>
+                    </div>
+
+                    <div class="new-group-profile-details">
+                        <div class="form-group mt-0 border-0">
+                            <label for="Inputname" class="form-label">Title</label>
+                            <input type="email" class="form-control" id="Inputname" value="Good Wishes">
+                        </div>
+                        <a href="personal-info.html" class="btn theme-btn w-100 m-0" data-bs-dismiss="modal">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit title option modal end  -->
+
+    <!-- mute modal starts -->
+    <div class="modal fade add-modal" id="mute" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Mute Notification For</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="flexRadio1" checked>
+                        <label class="form-check-label dark-text" for="flexRadio1">
+                            8 Hours
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="flexRadio2">
+                        <label class="form-check-label dark-text" for="flexRadio2">
+                            1 Week
+                        </label>
+                    </div>
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="radio" id="flexRadio3">
+                        <label class="form-check-label dark-text" for="flexRadio3">
+                            1 Month
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer grid-footer mt-0">
+                    <a href="personal-info.html" class="btn btn-link modal-btn w-50 content-color m-0"
+                        data-bs-dismiss="modal">Cancel</a>
+                    <a href="personal-info.html" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0"
+                        data-bs-toggle="modal">Mute</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mute option modal end  -->
+
+    <!-- leave group modal starts -->
+    <div class="modal fade popup-modal" id="leave" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img class="img-fluid img w-75" src="assets/images/leave-group.png" alt="leave">
+                    </div>
+                    <h2 class="dark-text">Leave Group !!</h2>
+                    <h4 class="content-color">If you’ll leave “Starts” group, you won’t be able to send anything.
+                        Still
+                        you want to leave ?
+                    </h4>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="personal-info.html" class="btn btn-link modal-btn w-50 content-color m-0"
+                        data-bs-dismiss="modal">Cancel</a>
+                    <a href="home.html" class="btn btn-link modal-btn theme-color fw-semibold w-50 m-0"
+                        data-bs-toggle="modal">Yes, Leave</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- leave group modal end -->
+
+    <!-- share modal starts -->
+    <div class="modal fade add-modal" id="share" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Share Link</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="story-list media-list">
+                        <li>
+                            <a href="#" class="media-box">
+                                <div class="media-image mx-auto color1">
+                                    <img src="assets/images/svg/message-text.svg" alt="gallery">
+                                </div>
+                                <h5>Message</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="media-box">
+                                <div class="media-image mx-auto color2">
+                                    <img src="assets/images/svg/sms.svg" alt="camera">
+                                </div>
+                                <h5>Email</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://slack.com/signin#/signin" class="media-box">
+                                <div class="media-image mx-auto color3">
+                                    <img src="assets/images/svg/slack.svg" alt="profile">
+                                </div>
+                                <h5>Slack</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/accounts/login/" class="media-box">
+                                <div class="media-image mx-auto color4">
+                                    <img src="assets/images/svg/instagram.svg" alt="gallery">
+                                </div>
+                                <h5>Instagram</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://telegr.am/user_mgt/login" class="media-box">
+                                <div class="media-image mx-auto color5">
+                                    <img src="assets/images/svg/send-2.svg" alt="camera">
+                                </div>
+                                <h5>Telegram</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="media-box">
+                                <div class="media-image mx-auto color6">
+                                    <img src="assets/images/svg/whatsapp.svg" alt="profile">
+                                </div>
+                                <h5>Whatsapp</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- share modal end  -->
+
+    <!-- iconsax js -->
+    <script src="assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sticky-header js -->
+    <script src="assets/js/sticky-header.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+</body>
+
+
+<!-- Mirrored from landing.pixelstrap.net/pwa/chatzy/theme/personal-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2025 10:11:40 GMT -->
+</html>

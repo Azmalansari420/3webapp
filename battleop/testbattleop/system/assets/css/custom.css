@@ -1,0 +1,130 @@
+:root {
+  --body-font-size: 16px;
+  --line-height30: 1.8;
+  --main-color: #0f0104;
+  --secondary-color: #fdc913;
+  --main-color-opacity: 206, 40, 41;
+  --body-font: "Exo", sans-serif;
+  --heading-font: "Exo", sans-serif;
+  --paragraph-color: #5A5A5A;
+  --heading-color: #1A1A1A;
+}
+
+p {
+    color: #fff;
+    }
+.register-page {
+    margin-top: 0;
+}
+
+
+.main-home-area .profile-area {
+   padding: 21px 20px 13px;
+    background: #000;
+  }
+
+.main-home-area .profile-area .media .media-body .profile-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.single-product-wrap {
+    border-radius: 8px;
+    background: var(--white-color, #fff);
+    text-align: center;
+    box-shadow: 0px 3px 8px -1px rgba(71, 50, 50, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.single-blog-card .card-details {
+    padding: 10px;
+    background: black;
+    text-align: center;
+}
+
+.blog-page-wrap .card-title {
+    display: block;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 12px;
+    margin-bottom: 8px;
+    color: white;
+    margin-top: 8px;
+}
+.esport-box {
+    width: 50%;
+    float: left;
+    padding: 5px;
+/*    padding: 15px;*/
+}
+
+.single-page-area .title-area {
+    padding: 25px 20px 30px;
+}
+
+.single-page-area {
+    padding-top: 86px;
+}
+
+a.join-btn {
+    background: transparent;
+    padding: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #19e5c9;
+    position: relative;
+    top: 10px;
+}
+
+/*.main-footer-bottom ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 13px 42px 13px;
+}*/
+.main-footer-bottom ul li {
+    list-style: none;
+    display: inline-block;
+    width: 14%;
+    margin: 9px 16px 0;
+/*    margin: 12px 25px 4px;*/
+}
+
+.mybet-single-card .bet-details li {
+    font-size: 17px;
+}
+
+.e-sport-btn{
+    padding: 7px 23px;
+    font-size: 17px!important;
+    border-radius: 10px;
+}
+.single-page-area p {
+    font-size: 15px;
+}
+.e-sport-btn {
+    padding: 13px 16px;
+    font-size: 12px !important;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.mybet-page-wrap .nav-tabs .nav-item .nav-link {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    padding: 11px 5px;
+    font-size: 13px!important;
+}
+.forget-pass-page {
+    padding-top: 20px;
+    /* height: 100vh; */
+}
+
+.single-page-area .title-area h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 30px 0 58px;
+}

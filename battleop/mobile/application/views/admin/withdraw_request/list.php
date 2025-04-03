@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+   <head>
+      <title><?php echo $page_title; ?> List</title>
+       <?php $this->load->view('admin/include/allcss') ?>
+
+   </head>
+   <body class="theme-black">
+      <div id="snackbar"><?php echo $this->session->flashdata('message'); ?></div>
+     <?php if($this->session->flashdata('message')){ ?>
+       <script>
+         function myFunction() {
+           var x = document.getElementById("snackbar");
+           x.className = "show";
+           setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+         }
+         myFunction();
+         </script>
+  
+   <?php } ?>
+      <?php echo loder; ?>
+      <!--  -->
+      <div id="app" class="app app-header-fixed app-sidebar-fixed ">
+
+
+        
+          <?php $this->load->view('admin/include/header') ?>
+          <?php $this->load->view('admin/include/sidebar') ?>
+
+
+         
+         <div id="content" class="app-content">
+           
+            <h1 class="page-header"><?php echo $page_title; ?> List</h1>
+
+           
+
+            <div class="row">
+               
+               <div class="col-xl-12">
+                  <div class="panel panel-inverse">
+                     <div class="panel-heading" style="justify-content: space-between;">
+                        <h4 class="panel-title">All <?php echo $page_title; ?></h4>
+                        <!-- <a href="<?php echo $add_url; ?>" class="btn btn-primary" style="margin-right: 10px;">Add New <?php echo $page_title; ?></a> -->
+                        <!-- <button type="button" class="btn btn-danger delete_multiple">Delete Multiple</button> -->
+                        <button type="button" class="btn btn-danger delete_multiple" style="margin-right: 10px;">Delete Multiple</button>
+
+                        <div class="panel-heading-btn" >
+                           <form class="serch-box" method="post" action="<?=base_url($pagination_url) ?>">
+                              <input type="search" name="search" value="<?php if(!empty($search))echo $search; ?>">
+                              <input type="submit" name="submit" class="btn btn-outline-orange btn-sm">
+                           </form>
+                        </div>
+                     </div>
+
+                     <div class="panel-body">
+                        <div style="text-align: end;margin-bottom: 10px;">
+                           <button  class="btn btn-primary" id="btnExport" onclick="fnExcelReport();" > Get Excel </button>
+                        </div>
+                        <table id="headerTable" class="table table-striped table-bordered align-middle">
+                           <thead>
+                              <tr>
+                                 <th width="1%">#</th>
+                                 <th class="text-nowrap">User Name</th>
+                                 <th class="text-nowrap">User Mobile</th>
+                                 <th class="text-nowrap">Winning Balance</th>
+                                 <th class="text-nowrap">Request Amount</th>
+                                 <th class="text-nowrap">Date Time</th>
+                                 <th class="text-nowrap">UPI Detail</th>
+                                 <th class="text-nowrap">Status</th>
+                                 <th class="text-nowrap">Action</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <?php
+                              $i=0;
+                              foreach ($ALLDATA as $key => $data) 
+                                 {  $i++;
+
+                                    $user = $this->db->get_where('users',array('id'=>$data->user_id))->result_object();
+
+                                 ?>
+                              <tr class="odd gradeX">
+                                 <td width="1%" class="fw-bold text-dark">
+                                    <label>
+                                       <?php echo $i; ?>
+                                       <input type="checkbox" name="multiple_delete[]" value="<?php echo $data->id; ?>" class="multiple_delete">
+                                    </label>
+                                 </td>
+                                 
+                                 <td><a href="<?=base_url('admin_con/withdraw_request/view_user_trans?user_id='.$user[0]->id) ?>">
+                                     <?php if(!empty($user)) echo  $user[0]->fname; ?>
+                                 </a></td>
+                                 <td><?php if(!empty($user)) echo  $user[0]->mobile; ?></td>
+                                 <td><?php if(!empty($user)) echo  $user[0]->winning_amt; ?></td>
+                                 <td><?=$data->amount ?></td>
+                                 <td><?=date('d/m/Y h:i A',strtotime($data->date_time)) ?></td>
+                                 <td>
+                                    Account Holder Name:- <?=$data->holder_name ?><br>
+                                    UPI ID:- <?=$data->upi_no ?>
+                                 </td>
+
+                                 <td class="">
+                                    <form method="post" action="<?=base_url('admin_con/withdraw_request/status_change') ?>">
+                                       <input type="hidden" value="<?=$data->id ?>" name="id">
+                                       <input type="hidden" value="<?php if(!empty($user)) echo  $user[0]->winning_amt; ?>" name="winning_amt">
+                                       <input type="hidden" value="<?=$data->user_id ?>" name="user_id">
+                                       <input type="hidden" value="<?=$data->amount ?>" name="amount">
+                                       <select class="form-select colorselector" name="status" <?php if($data->status!=0) echo 'disabled'; ?> data-id="<?=$data->id ?>">
+                                          <option value="0">New</option>
+                                          <option value="1" <?php if(!empty($data->status)) if($data->status=='1') echo 'selected'; ?>>Approved</option>
+                                          <option value="2" <?php if(!empty($data->status)) if($data->status=='2') echo 'selected'; ?>>Rejected</option>
+                                       </select>
+
+
+
+                                       <textarea id="divid<?=$data->id ?>" style="display:none;" class="form-control mt-2" name="reject_reason" placeholder="Write Reject Reason"></textarea>
+
+                                       <?php if($data->status!=0) { ?>
+                                          <?=$data->reject_reason ?>
+                                       <?php } ?>
+                                       <?php if($data->status==0) { ?>
+                                       <input type="submit" name="submit" value="Submit" class="mt-2">
+                                    <?php } ?>
+                                    </form>
+                                 </td>
+                                 <td>
+                                    <a href="<?=base_url('admin_con/withdraw_request/view_user_game?user_id='.$user[0]->id) ?>" class="btn btn-primary btn-sm">View</a>
+                                 </td>
+
+                              </tr>
+                           <?php } ?>
+                              
+                            
+                           </tbody>
+                        </table>
+                        <?php
+                        if(empty($search))
+                           { ?>
+
+                        <div class="row">
+                           <div class="col-sm-5">
+                              <div class="dataTables_info" id="data-table-buttons_info" role="status" aria-live="polite">Showing 1 to <?php echo $pageper; ?> of <?php echo $totalrow; ?> entries</div>
+                           </div>
+                           <div class="col-sm-7">
+                              <?php echo $links; ?>
+                           </div>
+                        </div>
+                     <?php } ?>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+         </div>
+       
+      </div>
+
+
+
+   <?php $this->load->view('admin/include/footer') ?>
+
+  <script type="text/javascript">
+        function click_here(id)
+        {
+            current_element = $('#statusbyid'+id);
+            if($('#customSwitch-'+id).prop("checked")==true)
+                var status = 1;
+            else
+                var status = 0;
+            $.ajax({
+                url:'<?php echo $status_value; ?>',
+                method:'post',
+                data:{status:status,id:id},
+                success:function(data){
+                    console.log(data);
+                    // location.reload();
+                    var result = JSON.parse(data);
+                    current_element.html(result.data['status']);
+                }
+            });
+        }
+
+        /*-------delete all--------*/
+
+        $(document).ready(function(){
+            $(".delete_multiple").click(function(event)
+             {
+               var ids = [];
+               $('.multiple_delete:checked').each(function () {
+                  ids.push(this.value);
+               });
+
+               if(ids.length==0)
+               {
+                  swal("Atleast Select one ....");
+                  return false;
+               }
+
+               Swal.fire({
+                  title: "Are you sure?",
+                  text: "You won't be able to revert this!",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+               if (result.isConfirmed) 
+                  {
+                    $.ajax({
+                        url:'<?php echo $multiple_delete; ?>',
+                        method:'post',
+                        data:{id:ids},
+                        success:function(data)
+                        {   
+                           location.reload();
+                           // console.log(data);
+                        }
+                     });                    
+                  }
+                });
+              })
+            });
+
+
+
+   $(document).ready(function(){
+
+       $('.colorselector').on('change', function() {
+         id = $(this).data('id');
+         if ( this.value == '2')
+         {
+           $("#divid"+id).show();
+         }
+         else
+         {
+           $("#divid"+id).hide();
+         }
+       });
+   });
+
+
+   </script>
+
+   </body>
+</html>
